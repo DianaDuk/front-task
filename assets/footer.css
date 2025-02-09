@@ -1,0 +1,134 @@
+.footer {
+    width: 100%;
+    text-align: center;
+}
+
+.footer-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Верхній блок (партнери) */
+.footer-top h2 {
+    margin-top: 40px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41.25px;
+    color: #171717;
+    /*margin-bottom: 30px;*/
+}
+
+.partners {
+    margin-top: 40px;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.partners img {
+    height: 50px;
+    max-width: 150px;
+    object-fit: contain;
+}
+
+/* Нижній блок */
+.footer-bottom {
+    border-top: 1px solid #CC4238;
+    padding: 40px 40px 60px 0px;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom img {
+    position: absolute;
+    top: 30px;
+    left: 90px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+/* Список посилань */
+.footer-links {
+    margin-right: 15px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links2 {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+@media (max-width: 430px) {
+    footer {
+	    width: 430px;
+    }
+
+    .partners {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .partners img {
+        height: 50px;
+        max-width: 100px;
+        object-fit: contain;
+    }
+
+    .footer-bottom {
+        border: none;
+        margin-top: 20px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-bottom img {
+        margin-top: 40px;
+        position:unset;
+    }
+
+    .links {
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .footer-links {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .footer-links2 {
+        justify-content: center;
+        flex-direction: column;
+    }
+}

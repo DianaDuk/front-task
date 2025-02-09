@@ -1,0 +1,51 @@
+header {
+	width: 1200px;
+	height: 126px;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	position: absolute;
+	top: 27px;
+	left: 76px;
+}
+
+.navbar {
+	display: flex;
+	gap: 28px;
+}
+
+.navbar li {
+	font-family: Roboto, sans-serif;
+	font-size: 20px;
+	line-height: 36px;
+}
+
+.menu-icon {
+	display: none;
+}
+
+@media (max-width: 430px) {
+    header {
+			width: 430px;
+      justify-content: space-between;
+			align-items:normal;
+      padding: 0 20px;
+    }
+
+    .logo {
+        position: static;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .menu-icon {
+			display: block;
+    }
+}
+

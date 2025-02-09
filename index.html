@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/style.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+		/>
+
+		<title>Generali</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<img src="./assets/img/image 1.svg" alt="logo" class="logo" />
+				<ul class="navbar">
+					<li>Informazioni</li>
+					<li>CEO</li>
+					<li>Iniziare a guadagnare subito</li>
+				</ul>
+				<img
+					src="./assets/img/ion_menu-outline.svg"
+					alt="menu-icon"
+					class="menu-icon"
+				/>
+			</header>
+			<main>
+				<section class="form-section">
+					<div class="left-block">
+						<h2>
+							Investire 250 euro per raggiungere 5000 euro in una settimana vi
+							sembra impossibile? <br />
+							Con il Gruppo Generali potete fare ancora di più!
+						</h2>
+					</div>
+					<div class="right-block">
+						<div class="form-container">
+							<form id="registerForm">
+								<input
+									type="text"
+									id="name"
+									placeholder="Il suo nome"
+									required
+								/>
+								<input
+									type="text"
+									id="surname"
+									placeholder="Il suo cognome"
+									required
+								/>
+								<input type="email" id="email" placeholder="E-mail" required />
+								<input type="tel" id="phone" class="phone-input" />
+
+								<button type="submit">REGISTRATI</button>
+							</form>
+						</div>
+					</div>
+				</section>
+
+				<section class="info-section">
+					<div class="info-image">
+						<img src="./assets/img/info-placeholder.svg" alt="Info Image" />
+					</div>
+					<div class="info-text">
+						<div class="info">
+							<h3>IL NOSTRO SCOPO</h3>
+							<p>
+								Siamo qui per promuovere lo sviluppo e la circolazione delle
+								persone, delle imprese e del Paese.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="services">
+					<h2>Inizia a servire con noi</h2>
+					<div class="service-container">
+						<div class="service-box">
+							<img
+								src="./assets/img/registration-icon.svg"
+								alt="Registrazione"
+							/>
+							<h3>Registrazione</h3>
+							<p>
+								Compilate tutti i campi del modulo di registrazione sul sito
+								web.
+							</p>
+							<button>INIZIARE</button>
+						</div>
+						<div class="devider"></div>
+						<div class="service-box">
+							<img
+								src="./assets/img/consultation-icon.svg"
+								alt="Consultazione"
+							/>
+							<h3>Consultazione di esperti</h3>
+							<p>
+								Dopo la registrazione, riceverete l'aiuto di Consulente e il
+								supporto di Piatta Energia.
+							</p>
+							<button>INIZIARE</button>
+						</div>
+						<div class="devider"></div>
+						<div class="service-box">
+							<img src="./assets/img/deposit-icon.svg" alt="Deposito" />
+							<h3>Deposito</h3>
+							<p>
+								Dopo la verifica, è necessario depositare un minimo di 250€ su
+								un conto dell'azienda.
+							</p>
+							<button>INIZIARE</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="about-company">
+					<div class="photo-container">
+						<img src="./assets/img/image 2.png" alt="someone" class="someone" />
+						<div class="about-text-block">
+							<p class="about-text">
+								Philippe Donnet, amministratore delegato di Generali, ha appena
+								festeggiato dieci anni in Italia e in un’intervista a
+								“Repubblica” spiega che bilancio trae dal nostro Paese: “In
+								questi dieci anni il mondo ha dovuto fare i conti con prove
+								molto dure e questo ci ha resi più capaci di gestire
+								l’imprevedibile. L’Italia ha resistito bene. Per quanto mi
+								riguarda, tre anni fa sono diventato cittadino italiano: perché
+								ci tenevo a rimarcare un’adesione forte ai valori e alla cultura
+								di questo Paese”. Un’altra prova per l’economia è stato il
+								repentino rialzo dei tassi: “A mio parere è improprio parlare
+								oggi di tassi alti: quando ero teenager, i mutui viaggiavano a
+								due cifre percentuali. La vera anomalia è stata vivere con tassi
+								a zero per quindici anni. Oggi siamo in una situazione normale.
+								Per quel che riguarda il nostro gruppo, abbiamo un business mix
+								grazie al quale possiamo crescere in qualsiasi ciclo economico”.
+								La crescita dell’Italia è stimata attorno allo 0,7 per cento:
+								“Noi non avremo problemi ma per la crescita si può fare meglio,
+								in Italia e in Europa. Ritengo che in Europa non ci sia
+								abbastanza Europa, ma troppe tasse e troppe norme, che si
+								sovrappongono a quelle nazionali. Questo non aiuta né le
+								famiglie né le imprese: quindi abbassiamo le tasse, riduciamo le
+								norme e liberiamo le energie imprenditoriali”.
+							</p>
+						</div>
+					</div>
+					<h2 class="potencijal">Potencijal dobiti</h2>
+					<div class="statistic">
+						<div class="calculator">
+							<input type="text" id="monthsRange" />
+							<input type="text" id="amountRange" />
+
+							<div class="profit-box">
+								<p>MOGUĆA DOBIT: <span id="profitValue">€ 8600</span></p>
+							</div>
+						</div>
+						<div class="statistic-text">
+							<h4>UKUPNA DOBIT KORISNIKA:</h4>
+							<p>€ 128 567 000</p>
+							<h4>AKTIVNI KORISNICI:</h4>
+							<p>77 335</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="review-section">
+					<div class="glide">
+						<div class="glide__track" data-glide-el="track">
+							<ul class="glide__slides">
+								<li class="glide__slide">
+									<div class="review">
+										<div class="review-header">
+											<img
+												src="./assets/img/Container.svg"
+												alt="review-logo"
+												class="review-logo"
+											/>
+											<div class="review-title">
+												<h3>Jeff Bezos:</h3>
+												<h5>
+													Technologieunternehmer, Investor und Philanthrop
+												</h5>
+												<img
+													src="./assets/img/logos_facebook.svg"
+													alt="facebook"
+												/>
+											</div>
+										</div>
+										<p class="review-text">
+											Dem Quantencomputing gehört die Zukunft. Ich übertreibe
+											nicht, wenn ich sage, es wird alles verändern wird. Das
+											Quantencomputing steht noch ganz am Anfang; nicht viele
+											Menschen wissen davon, was bedeutet, dass nur sehr wenige
+											es nutzen. Die wenigen, die es nutzen, treffen unglaublich
+											kluge (und profitable) Entscheidungen.
+										</p>
+									</div>
+								</li>
+								<li class="glide__slide">
+									<div class="review">
+										<div class="review-header">
+											<img
+												src="./assets/img/Container (1).svg"
+												alt="review-logo"
+												class="review-logo"
+											/>
+											<div class="review-title">
+												<h3>Bill Gates:</h3>
+												<h5>
+													Wirtschaftsmagnat, Investor, Autor, Philanthrop und
+													Menschenfreund
+												</h5>
+												<img
+													src="./assets/img/logos_facebook.svg"
+													alt="facebook"
+												/>
+											</div>
+										</div>
+										<p class="review-text">
+											Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von
+											seinem eigenen Geld ausgegeben hat, um dieses Programm zu
+											finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar
+											von seinem eigenen Geld, um eine bessere Zukunft für alle
+											zu finanzieren und um anderen zu helfen Gewinne zu machen,
+											die ihm dabei helfen werden! Das ist eine
+											Win-Win-Situation, und ich bin sehr gespannt zu sehen,
+											wohin das führen wird.
+										</p>
+									</div>
+								</li>
+								<li class="glide__slide">
+									<div class="review">
+										<div class="review-header">
+											<img
+												src="./assets/img/Container (2).svg"
+												alt="review-logo"
+												class="review-logo"
+											/>
+											<div class="review-title">
+												<h3>Bill Gates:</h3>
+												<h5>
+													Wirtschaftsmagnat, Investor, Autor, Philanthrop und
+													Menschenfreund
+												</h5>
+												<img
+													src="./assets/img/logos_facebook.svg"
+													alt="facebook"
+												/>
+											</div>
+										</div>
+										<p class="review-text">
+											Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von
+											seinem eigenen Geld ausgegeben hat, um dieses Programm zu
+											finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar
+											von seinem eigenen Geld, um eine bessere Zukunft für alle
+											zu finanzieren und um anderen zu helfen Gewinne zu machen,
+											die ihm dabei helfen werden! Das ist eine
+											Win-Win-Situation, und ich bin sehr gespannt zu sehen,
+											wohin das führen wird.
+										</p>
+									</div>
+								</li>
+								<li class="glide__slide">
+									<div class="review">
+										<div class="review-header">
+											<img
+												src="./assets/img/Container (3).svg"
+												alt="review-logo"
+												class="review-logo"
+											/>
+											<div class="review-title">
+												<h3>Bill Gates:</h3>
+												<h5>
+													Wirtschaftsmagnat, Investor, Autor, Philanthrop und
+													Menschenfreund
+												</h5>
+												<img
+													src="./assets/img/logos_facebook.svg"
+													alt="facebook"
+												/>
+											</div>
+										</div>
+										<p class="review-text">
+											Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von
+											seinem eigenen Geld ausgegeben hat, um dieses Programm zu
+											finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar
+											von seinem eigenen Geld, um eine bessere Zukunft für alle
+											zu finanzieren und um anderen zu helfen Gewinne zu machen,
+											die ihm dabei helfen werden! Das ist eine
+											Win-Win-Situation, und ich bin sehr gespannt zu sehen,
+											wohin das führen wird.
+										</p>
+									</div>
+								</li>
+								<li class="glide__slide">
+									<div class="review">
+										<div class="review-header">
+											<img
+												src="./assets/img/Container (4).svg"
+												alt="review-logo"
+												class="review-logo"
+											/>
+											<div class="review-title">
+												<h3>Bill Gates:</h3>
+												<h5>
+													Wirtschaftsmagnat, Investor, Autor, Philanthrop und
+													Menschenfreund
+												</h5>
+												<img
+													src="./assets/img/logos_facebook.svg"
+													alt="facebook"
+												/>
+											</div>
+										</div>
+										<p class="review-text">
+											Ich weiß mit Sicherheit, dass Elon 3 Milliarden Dollar von
+											seinem eigenen Geld ausgegeben hat, um dieses Programm zu
+											finanzieren. Hut ab vor ihm - das sind 3 Milliarden Dollar
+											von seinem eigenen Geld, um eine bessere Zukunft für alle
+											zu finanzieren und um anderen zu helfen Gewinne zu machen,
+											die ihm dabei helfen werden! Das ist eine
+											Win-Win-Situation, und ich bin sehr gespannt zu sehen,
+											wohin das führen wird.
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="footer-top">
+					<h2>Gli azionisti dell'azienda</h2>
+					<div class="partners">
+						<img src="./assets/img/Mediobanka.svg" alt="Mediobanka" />
+						<img src="./assets//img/UniCredit.svg" alt="UniCredit" />
+						<img src="./assets/img/Banka D`Italia.svg" alt="Banka" />
+						<img src="./assets/img/Holdings.svg" alt="Holdings" />
+						<img src="./assets/img/Carlo.svg" alt="Carlo" />
+						<img src="./assets/img/Generali.svg" alt="Generali" />
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="links">
+						<ul class="footer-links">
+							<li>Mappa del sito</li>
+							<li>Termini di utilizzo</li>
+							<li>Avviso di accessibilità</li>
+							<li>Gestione dei Cookie</li>
+							<li>
+								Politica sulla protezione dei dati e informativa sulla privacy
+							</li>
+						</ul>
+						<ul class="footer-links2">
+							<li>Avviso di frode Web e phishing</li>
+							<li>Politica sui reclami – Australia</li>
+						</ul>
+					</div>
+					<img src="./assets/img/Generali.svg" alt="Generali" />
+				</div>
+			</footer>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+		<script src="./assets/script.js"></script>
+	</body>
+</html>
